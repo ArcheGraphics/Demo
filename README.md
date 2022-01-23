@@ -1,8 +1,9 @@
 # DigitalVoxEffect
+
 This repository is mainly used to save some effect gifs obtained by *DigitalVox*.
 
-*DigitalVox* is the name of a series. Although each version is based on a component system, the specific implementation is
-very different. Therefore, different code repositories are used for management. Please obtain the code you need on
+*DigitalVox* is the name of a series. Although each version is based on a component system, the specific implementation
+is very different. Therefore, different code repositories are used for management. Please obtain the code you need on
 demand:
 
 1. DigitalVox2: Engine written in Swift, 3rd party library bridged by Objective-C++.
@@ -24,17 +25,18 @@ on [GLTF](https://github.com/syoyo/tinygltf)
 
 ### GPU Skinning Animation with GLTF
 
-[Example](https://github.com/yangfengzzz/DigitalVox4/blob/master/apps/scene_animation_app.cpp) can also load animation which
-control the tree of entities. GPU Skinning Animation limit the joint weight have only four component.
+[Example](https://github.com/yangfengzzz/DigitalVox4/blob/master/apps/scene_animation_app.cpp) can also load animation
+which control the tree of entities. GPU Skinning Animation limit the joint weight have only four component.
 
 ![GPU Animation](https://github.com/yangfengzzz/DigitalVoxEffect/raw/main/doc/img/gpu_animation.gif "GPU Animation")
 
 ### CPU Animation System with FBX
 
-[Example](https://github.com/yangfengzzz/DigitalVox4/blob/master/apps/animation_app.cpp) about CPU animation system which
-is based on [OZZ-Animation](https://github.com/guillaumeblanc/ozz-animation). Ozz support CPU skinning, blending, IK and
-other animation ability. The CPU animation system does not limit the number of weights of the bones, so it will be more
-free to use.
+[Example](https://github.com/yangfengzzz/DigitalVox4/blob/master/apps/animation_app.cpp) about CPU animation system
+which is based on [OZZ-Animation](https://github.com/guillaumeblanc/ozz-animation). Ozz support CPU skinning, blending,
+IK and other animation ability. The CPU animation system does not limit the number of weights of the bones, so it can be
+independent of Shader and can control more freely
+
 ![Animation Simulation](https://github.com/yangfengzzz/DigitalVoxEffect/raw/main/doc/img/animation.gif "Animation Simulation")
 
 ### Physics System
@@ -68,8 +70,8 @@ kind of lights. All these based on ShadowMap.
 ### GUI
 
 [Editor](https://github.com/yangfengzzz/DigitalVox4/blob/master/editor/gui_entry.h) use IMGUI to render gui
-and [FrameBuffer Picker](https://github.com/yangfengzzz/DigitalVoxEffect/blob/master/apps/framebuffer_picker_app.cpp) to link
-the scene with panel. [ImGuizmo](https://github.com/CedricGuillemet/ImGuizmo)
+and [FrameBuffer Picker](https://github.com/yangfengzzz/DigitalVoxEffect/blob/master/apps/framebuffer_picker_app.cpp) to
+link the scene with panel. [ImGuizmo](https://github.com/CedricGuillemet/ImGuizmo)
 and [imgui-node-editor](https://github.com/thedmd/imgui-node-editor) build the basic infrastructure of editor.
 
 ![Editor](https://github.com/yangfengzzz/DigitalVoxEffect/raw/main/doc/img/editor.gif "Editor")
